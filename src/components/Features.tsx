@@ -14,21 +14,21 @@ export function Features() {
       image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80"
     },
     {
-      icon: <Target className="w-8 h-8 text-blue-600" />,
+      icon: <LineChart className="w-8 h-8 text-blue-600" />,
       title: "Personalized Learning Path",
       description: "Create a tailored educational journey that adapts to your child's learning style and pace",
       path: "/features/personalized-learning",
       image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80"
     },
     {
-      icon: <LineChart className="w-8 h-8 text-blue-600" />,
+      icon: <Target className="w-8 h-8 text-blue-600" />,
       title: "Progress Tracking",
       description: "Monitor achievements and growth with real-time insights and detailed performance analytics",
       path: "/features/progress-tracking",
       image: "https://www.shutterstock.com/image-photo/shortcut-goal-success-business-growth-260nw-2330131315.jpg"
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Store className="w-8 h-8 text-blue-600" />,
       title: "Education Marketplace",
       description: "Connect with top-rated tutors, programs, and schools tailored to your child's interests and goals",
       path: "/features/expert-coordination",
@@ -42,7 +42,7 @@ export function Features() {
       image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80"
     },
     {
-      icon: <Sparkles className="w-8 h-8 text-blue-600" />,
+      icon: <GraduationCap className="w-8 h-8 text-blue-600" />,
       title: "College Admission",
       description: "Navigate the college admission journey with expert guidance and strategic planning",
       path: "/features/talent-development",
