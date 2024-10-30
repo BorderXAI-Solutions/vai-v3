@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Brain } from 'lucide-react';
 
 export function Footer() {
@@ -11,10 +12,11 @@ export function Footer() {
             <span className="font-medium">Victory AI</span>
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="hover:text-white">About</a>
-            <a href="#" className="hover:text-white">Features</a>
-            <a href="#" className="hover:text-white">Contact</a>
-            <a href="#" className="hover:text-white">Privacy</a>
+            <Link to="/about" className="hover:text-white">About</Link>
+            <Link to="/features" className="hover:text-white">Features</Link>
+            <Link to="/pricing" className="hover:text-white">Pricing</Link>
+            <Link to="/contact" className="hover:text-white">Contact</Link>
+            <Link to="/privacy" className="hover:text-white">Privacy</Link>
           </div>
         </div>
         <div className="mt-8 text-center text-sm">
