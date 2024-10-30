@@ -28,7 +28,7 @@ export function Hero({ onGetStarted }: HeroProps) {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200">
-            The AI co-pilot that empowers parents to unlock their children's full potential
+            The AI co-pilot that empowers parents to unlock their children's fullest potential
           </p>
           <button 
             onClick={onGetStarted}
