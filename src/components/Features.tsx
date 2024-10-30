@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Brain, Target, LineChart, Users, BookOpen, Sparkles } from 'lucide-react';
+import { Brain, Target, LineChart, Users, BookOpen, Sparkles, Store, GraduationCap } from 'lucide-react';
 
 export function Features() {
   const navigate = useNavigate();
