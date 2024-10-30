@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Check, Star, GraduationCap, Brain, Zap, BookOpen } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export function Pricing() {
   const navigate = useNavigate();
@@ -67,10 +67,10 @@ export function Pricing() {
   };
 
   const handleGetStarted = (planId: string) => {
-    // Here you would typically handle the subscription process
-    console.log(`Selected plan: ${planId}`);
-    // For now, we'll just show an alert
-    alert('Thank you for your interest! This feature is coming soon.');
+    // Open email client with pre-filled subject
+    const subject = encodeURIComponent(`Interest in ${plans.find(p => p.id === planId)?.name} Plan`);
+    const body = encodeURIComponent(`Hi Victory AI team,\n\nI'm interested in the ${plans.find(p => p.id === planId)?.name} plan.`);
+    window.location.href = `mailto:info@victoryai.org?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -190,13 +190,13 @@ export function Pricing() {
             <p className="text-xl text-gray-600 mb-8">
               Join thousands of parents who are transforming their children's education
             </p>
-            <button
-              onClick={() => handleGetStarted(selectedPlan || 'pro')}
+            <Link
+              to="/"
               className="inline-flex items-center space-x-2 bg-purple-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-purple-700 transition-colors"
             >
               <Star className="w-5 h-5" />
               <span>Start Free Trial</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
