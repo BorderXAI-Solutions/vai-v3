@@ -7,6 +7,7 @@ import { FeatureProgressTracking } from './components/FeatureProgressTracking';
 import { FeatureExpertCoordination } from './components/FeatureExpertCoordination';
 import { FeatureCurriculumOptimization } from './components/FeatureCurriculumOptimization';
 import { FeatureTalentDevelopment } from './components/FeatureTalentDevelopment';
+import { Pricing } from './components/Pricing';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/features/expert-coordination" element={<FeatureExpertCoordination />} />
         <Route path="/features/curriculum-optimization" element={<FeatureCurriculumOptimization />} />
         <Route path="/features/talent-development" element={<FeatureTalentDevelopment />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </Router>
   );
